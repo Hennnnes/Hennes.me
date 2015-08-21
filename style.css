@@ -1,0 +1,55 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing:border-box;
+}
+
+body {
+	background: #122334;
+	font-family: Lato, Helvetica, Times;
+	font-size: 30px;
+	color: #34495d;
+	margin-right: 20%;
+	padding: 50px 0;
+	position: relative;
+	left: 10%;
+}
+
+a {
+	text-decoration: none;
+	color: #27A3EB;
+}
+
+a:hover {
+	color: #1b72ad;
+}
+.profile-pic {
+	  background: url(http://hennes.me/me.png);
+	  display: block;
+	  background-size: cover;
+	  width: 230px;
+	  height: 230px;
+	  border-radius: 100%;
+	  margin-bottom: 50px;
+}
+
+
+.heading {
+	position:relative;
+	top: 8%;
+	font-size: 40px;
+	
+}
+
+.text {
+	margin-top:20px;
+	position:relative;
+	top:20%;
+	
+}
+
+.about {
+	font-size: 20px;
+	position: relative;
+	
+}
