@@ -5,10 +5,10 @@
 }
 
 body {
-	background: #122334;
+	background: #d6d6d6;
 	font-family: Lato, Helvetica, Times;
 	font-size: 30px;
-	color: #34495d;
+	color: #525252;
 	margin-right: 20%;
 	padding: 50px 0;
 	position: relative;
@@ -17,11 +17,11 @@ body {
 
 a {
 	text-decoration: none;
-	color: #27A3EB;
+	color: #539598;
 }
 
 a:hover {
-	color: #1b72ad;
+	color: #6fc7cb;
 }
 .profile-pic {
 	  background: url(http://hennes.me/me.png);
