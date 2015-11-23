@@ -1,55 +1,66 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,700);
 * {
 	margin: 0;
 	padding: 0;
-	box-sizing:border-box;
+	box-sizing: border-box;
 }
 
+/*
+color scheme:
+background: #ecf0f1
+font-color: #434445
+link-color: #eb6666
+fonts: Roboto, Roboto Slab
+*/
+
 body {
-	background: #d6d6d6;
-	font-family: Lato, Helvetica, Times;
-	font-size: 30px;
-	color: #525252;
-	margin-right: 20%;
-	padding: 50px 0;
-	position: relative;
-	left: 10%;
+	background-color: #ecf0f1;
+	color: #434445;
+	font-family: Roboto Slab, Helvetica, Arial;
+	font-weight: 400;
+}
+
+.content {
+	width: 80%;
+	margin: 30px auto;
+}
+
+.profile-pic {
+	background: url("http://hennes.me/me.png");
+  width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	float: left;
+	margin-bottom: 20px;
+}
+
+.heading {
+	font-size: 40;
+	margin-left: 170px;
+	padding-top: 50px;
+}
+
+main {
+	clear: both;
+	line-height: 40px;
+	letter-spacing: 1px;
+	margin-top: 20px;
+}
+
+footer {
+	margin-top: 15px;
+	font-size: 17px;
 }
 
 a {
+	color: #eb6666;
 	text-decoration: none;
-	color: #539598;
 }
 
-a:hover {
-	color: #6fc7cb;
-}
-.profile-pic {
-	  background: url(http://hennes.me/me.png);
-	  display: block;
-	  background-size: cover;
-	  width: 230px;
-	  height: 230px;
-	  border-radius: 100%;
-	  margin-bottom: 50px;
-}
-
-
-.heading {
-	position:relative;
-	top: 8%;
-	font-size: 40px;
-	
-}
-
-.text {
-	margin-top:20px;
-	position:relative;
-	top:20%;
-	
-}
-
-.about {
-	font-size: 20px;
-	position: relative;
-	
+@media (max-width: 920px) {
+	.heading {
+		clear: both;
+		padding: 0;
+		margin: 0;
+	}
 }
