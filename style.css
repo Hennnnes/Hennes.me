@@ -27,7 +27,7 @@ color: #333;
 
 body {
 	font-family: 'Raleway', sans-serif;
-	font-weight: 600;
+	font-weight: 400;
 }
 
 .flex-text-right {
@@ -35,7 +35,7 @@ body {
 }
 
 h1 {
-	font-size: 6em;
+	font-size: 17vmin;
 	font-weight: 900;
 }
 
@@ -83,23 +83,21 @@ main {
 }
 
 
-@media (max-width: 900px) {
+@media (max-width: 869px) {
 	.flex-wrapper {
 		justify-content: flex-start;
-	}
-
-	h1 {
-		font-size: 4em;
 	}
 	.flex-text-right {
 		text-align: left;
 	}
-
 	.flex-text {
 		flex-direction: column;
 	}
-
 	.flex-list {
 		flex-direction: column;
+	}
+
+	h1 {
+		font-size: 20vmin;
 	}
 }
