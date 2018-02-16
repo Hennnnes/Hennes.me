@@ -1,36 +1,81 @@
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
-		<title>Hennes Römmer</title>
-		<link href="https://fonts.googleapis.com/css?family=Raleway:400,900" rel="stylesheet">
-		<style>*{margin:0;padding:0;box-sizing:border-box}body{font-family:Raleway,sans-serif;font-weight:400}.flex-text-right{text-align:right}h1{font-size:17vmin;font-weight:900}a{color:#006caa;text-decoration:none}a:hover{text-decoration:underline}.flex-wrapper{width:800px;max-width:90%;margin:0 auto;height:100vh;display:flex;justify-content:center;flex-direction:column}.flex-list>*,.flex-text>*,header{margin-bottom:20px}main{line-height:1.5;letter-spacing:1px}.flex-text{display:flex;justify-content:space-between}.flex-list{list-style:none;display:flex;justify-content:space-between}@media (max-width:869px){.flex-wrapper{justify-content:flex-start}.flex-text-right{text-align:left}.flex-list,.flex-text{flex-direction:column}h1{font-size:20vmin}}</style>
-	</head>
-	<body>
-		<div class="flex-wrapper">
-			<header>
-				<h1>Hennes Römmer</h1>
-			</header>
-			<main>
-				<div class="flex-text">
-					<p>Student,<br>Media Systems,<br>6tes Semester, HAW.</p>
 
-					<p class="flex-text-right">Werkstudent,<br>Frontend,<br><a href="https://phorax.com" alt="Phorax">Phorax</a>.</p>
-				</div>
-			</main>
-			<footer>
-				<ul class="flex-list">
-					<li>
-						<a href="mailto:hello@hennes.me">Mail</a>
-					</li>
-					<li>
-						<a href="http://instagram.com/hennnnes">Instagram</a>
-					</li>
-					<li>
-						<a href="http://twitter.com/hennnnes">Twitter</a>
-					</li>
-				</ul>
-			</footer>
-		</div>
-	</body>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+	<title>Hennes Römmer</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box
+		}
+
+		body {
+			background-color: black;
+			color: #cccccc;
+			font-size: 2rem;
+			font-variant-ligatures: common-ligatures;
+		}
+
+		h1 {
+			color: white;
+			font-size: 4.5rem;
+			font-weight: 700;
+			margin-bottom: .7em;
+			font-family: sans-serif;
+		}
+
+		p {
+			font-size: 2rem;
+			font-family: serif;
+			line-height: 1.4;
+		}
+
+		a {
+			color: #cccccc;
+		}
+
+		.container {
+			max-width: 620px;
+			margin: 0 auto;
+			padding: 0 20px;
+			display: flex;
+			flex-direction: column;
+			align-content: center;
+			justify-content: center;
+			min-height: 100vh;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<header>
+			<h1>Hennes Römmer</h1>
+		</header>
+		<main>
+			<p>
+				Ich bin jetzt mit dem Studium durch. Wer h&auml;tte das gedacht? Was als n&auml;chstes ansteht, weiß ich noch nicht.
+				<br>Schreib mir doch eine
+				<a href="mailto:hello@hennes.me">Mail</a>.
+			</p>
+		</main>
+	</div>
+
+	<script>
+		if ('serviceWorker' in navigator) {
+			window.addEventListener('load', function () {
+				navigator.serviceWorker.register('/sw.js').then(function (registration) {
+					// Registration was successful
+					console.log('ServiceWorker registration successful with scope: ', registration.scope);
+				}, function (err) {
+					// registration failed :(
+					console.log('ServiceWorker registration failed: ', err);
+				});
+			});
+		}
+	</script>
+</body>
+
 </html>
