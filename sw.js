@@ -1,4 +1,4 @@
-var CACHE_NAME = "hennes.me-v1";
+var CACHE_NAME = "hennes.me-v2";
 var urlsToCache = ["/", "/sw.js"];
 
 self.addEventListener("install", function(event) {
