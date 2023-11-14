@@ -12,9 +12,17 @@
 		}
 
 		:root {
-			--bg-color: #f9f9f9;
-			--color: #0B64FE;
-			--color-hover: #000000;
+			--bg-color: #F7F4F3;
+			--color: #0F0A0A;
+			--color-hover: #878585;
+		}
+
+		@media (prefers-color-scheme: dark) {
+			:root {
+				--bg-color: #0F0A0A;
+				--color: #F2F5EA;
+				--color-hover: #c2c4bb;
+			}
 		}
 
 		body {
@@ -46,9 +54,6 @@
 			display: inline-block;
 		}
 
-		li:not(:last-of-type) {
-		}
-
 		li:not(:last-of-type):after {
 			content: ' / '
 		}
@@ -59,6 +64,7 @@
 		.container {
 			margin: 2rem 1.5rem 1.5rem 1.5rem;
 			max-width: 100%;
+			width: 50ch;
 		}
 
 		@media screen and (min-width: 768px) {
@@ -72,14 +78,6 @@
 				margin: 10vh auto 1vh 15vh;
 			}
 		}
-
-		@media (prefers-color-scheme: dark){
-			:root {
-				--bg-color: #33333c;
-				--color: #ffffff;
-				--color-hover: #cbcbcb;
-			}
-		}
 	</style>
 </head>
 
@@ -90,8 +88,8 @@
 		</header>
 		<main>
 			<p>
-				Ich bin Frontend Dev bei <a href="https://sda.se" target="_blank" rel="noopener nofollow">SDA SE</a>.
-				<br>Schreib mir doch eine
+				Ich bin Frontend Developer. Mir liegen Accessibility und Performance ebenso sehr am Herzen wie die Zusammenarbeit mit Product und Design.<br>
+				Schreib mir doch eine
 				<a href="mailto:hello@hennes.me">Mail</a>.
 			</p>
 			<ul>
